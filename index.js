@@ -21,6 +21,7 @@
 
 		command.stdout.on('data', function (installation_progress) {
 			stop_download_progress();
+			exec('chmod +x composer.phar');
 			console.log(installation_progress);
 		});
 
